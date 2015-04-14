@@ -1,8 +1,8 @@
 "[*] file header
-"project: vimrc
+"project: vimrc_justin
 "file: .vimrc
 "author: elias abderhalden
-"date: 2014-11-02
+"date: 2015-04-14
 
 
 "[*] initial stuff
@@ -32,22 +32,9 @@ Plugin 'tomasr/molokai'
 	" color theme
 Plugin 'bling/vim-bufferline'
 	" line at bottom showing open buffers
-Plugin 'ntpeters/vim-better-whitespace'
-	" shows whitespace
 Plugin 'tpope/vim-fugitive'
 	" git wrapper
 
-" not quite working...
-"Plugin 'bling/vim-airline'
-"Plugin 'Lokaltog/vim-easymotion'
-	" motion help
-
-" possible plugins
-"Plugin 'notpratheek/vim-luna'
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'nathanaelkane/vim-indent-guides'
-"Plugin 'vim-scripts/EasyGrep'
-"Plugin 'vim-scripts/buftabs'
 call vundle#end()
 filetype plugin indent on
 
@@ -66,32 +53,9 @@ let g:SuperTabNoCompleteAfter = [ '^', '\s', '"',
 								\ '\\', '/']
 
 
-"[*.*.*] supertab
-"let g:airline_powerline_fonts = 0
-"if !exists('g:airline_symbols')
-"	let g:airline_symbols = {}
-"endif
-"let g:airline_symbols.space = "\ua0"
-
-
 "[*.*.*] vim-better-whitespace
 autocmd VimEnter,Colorscheme * :hi ExtraWhitespace ctermbg=236
 nnoremap <silent> <leader>x :ToggleWhitespace<CR>
-
-
-"[*.*.*] easymotion
-"let g:EasyMotion_do_mapping = 0
-"nmap <leader>q <Plug>(easymotion-sn)
-"nmap n <Plug>(easymotion-next)
-"nmap N <Plug>(easymotion-prev)
-
-
-"[*.*.*] indent guides
-"let g:indent_guides_start_level = 2
-"let g:indent_guides_guide_size = 1
-"let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=233
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 
 
 "[*] colorscheme
@@ -131,13 +95,6 @@ nnoremap <silent> <leader>s :w<CR>:bprevious<CR>
 "map z z.
 
 
-"[*.*] keyboard remappings (for c)
-"inoremap [ {
-"inoremap ] }
-"inoremap { [
-"inoremap } ]
-
-
 "[*.*] editing mappings
 nnoremap t dd
 nnoremap y yy
@@ -152,7 +109,6 @@ nnoremap zr zR
 "[*.*] windows mapping
 nnoremap <leader>d <C-w>j
 nnoremap <leader>e <C-w>k
-"nnoremap <silent> ww :call Togglewindow()<CR>
 nnoremap W :split<CR>
 nnoremap ww :vsplit<CR>
 nnoremap wj <C-w>j
@@ -191,10 +147,6 @@ nnoremap <F7> :set list<CR>
 nnoremap <F8> :set nolist<CR>
 
 
-"[*.*] testing
-"inoremap 8 *
-
-
 "[*] settings
 set number
 set cursorline
@@ -213,8 +165,8 @@ set nolist
 "	 	abc;
 "	 	}
 "}
-"set cinkeys=0{,0},:,0#,!^F,o,O,e
-"set cinoptions={1s
+set cinkeys=0{,0},:,0#,!^F,o,O,e
+set cinoptions={1s
 
 "mode:
 "func()
@@ -223,8 +175,8 @@ set nolist
 "	abc;
 "	}
 "}
-set cinkeys=0{,*0},:,0#,!^F,o,O,e
-set cinoptions={1s,^-8
+"set cinkeys=0{,*0},:,0#,!^F,o,O,e
+"set cinoptions={1s,^-8
 
 
 "[*.*] searching

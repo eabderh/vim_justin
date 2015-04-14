@@ -1,18 +1,5 @@
 
 
-"let g:optionwindow = 0
-"
-"function Togglewindow()
-"	if g:optionwindow == 1
-"		let g:optionwindow = 0
-"		:only
-"	else
-"		let g:optionwindow = 1
-"		:split
-"	endif
-"endfunction
-
-
 let g:optionstar = 0
 
 function Togglestar()

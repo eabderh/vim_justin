@@ -1,4 +1,5 @@
 
+
 let g:Movemap_current = "mov"
 
 
